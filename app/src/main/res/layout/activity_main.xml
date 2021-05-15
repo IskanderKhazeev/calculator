@@ -1,18 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
+     android:layout_width="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn7"                        />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn9" />
+
+        <Button
+            android:id="@+id/btn_multiple"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_multiple" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn6" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_divide" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn3" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_minus" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn0" />
+
+        <Button
+            android:id="@+id/btn_comma"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_comma" />
+
+        <Button
+            android:id="@+id/btn_equally"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_equally" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_plus" />
+
+    </GridLayout>
+
+</FrameLayout>
