@@ -3,15 +3,20 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:layout_width="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.CalculatorActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       android:scaleType="centerCrop"
+        android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <GridLayout
         android:layout_width="match_parent"
@@ -24,7 +29,7 @@
             android:id="@+id/btn7"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn7"                        />
+            android:text="@string/btn7" />
 
         <Button
             android:id="@+id/btn8"
@@ -99,10 +104,10 @@
             android:text="@string/btn0" />
 
         <Button
-            android:id="@+id/btn_comma"
+            android:id="@+id/btn_dot"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_comma" />
+            android:text="@string/btn_dot" />
 
         <Button
             android:id="@+id/btn_equally"
